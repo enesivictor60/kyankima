@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Kyankima Women's Cooperative</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo-area">
+            <div class="logo-text">🌾 Kyankima Women's Cooperative</div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="products.html">📦 Products</a></li>
+                <li><a href="health-tips.html">💚 Health Tips</a></li>
+                <li><a href="faqs.html">❓ FAQs</a></li>
+                <li><a href="about.html">📖 About Us</a></li>
+                <li><a href="contact.html">📞 Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <div class="page-header">
+        <h2>📦 Our Products (23 Items)</h2>
+        <p>Quality handcrafts and fresh farm produce from our 47 members</p>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="🔍 Search products..." onkeyup="searchProducts()">
+            <button onclick="searchProducts()">Search</button>
+        </div>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+        <!-- Handcrafts Category -->
+        <div class="product-card" data-name="handwoven basket small">
+            <img src="handwoven basket medium small.webp" alt="Handwoven Basket Small" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Handwoven Basket Small</h4>
+            <p>Traditional small basket</p>
+            <span class="price">UGX 15,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Handwoven Basket Small', 15000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="handwoven basket medium">
+            <img src="Handwoven Basket Small.webp" alt="Handwoven Basket Medium" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Handwoven Basket Medium</h4>
+            <p>Traditional medium basket</p>
+            <span class="price">UGX 25,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Handwoven Basket Medium', 25000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="handwoven basket large">
+            <img src="handwoven basket medium LARGE.webp" alt="Handwoven Basket Large" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Handwoven Basket Large</h4>
+            <p>Traditional large basket</p>
+            <span class="price">UGX 35,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Handwoven Basket Large', 35000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="palm leaf mat small">
+            <img src="Palm Leaf Mat Small.jpg" alt="Palm Leaf Mat Small" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Palm Leaf Mat Small</h4>
+            <p>Dried palm leaves mat</p>
+            <span class="price">UGX 20,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Palm Leaf Mat Small', 20000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="palm leaf mat medium">
+            <img src="Palm Leaf Mat medium.webp" alt="Palm Leaf Mat Medium" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Palm Leaf Mat Medium</h4>
+            <p>Dried palm leaves mat</p>
+            <span class="price">UGX 35,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Palm Leaf Mat Medium', 35000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="palm leaf mat large">
+            <img src="Palm Leaf Mat large.jpg" alt="Palm Leaf Mat Large" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Palm Leaf Mat Large</h4>
+            <p>Dried palm leaves mat</p>
+            <span class="price">UGX 50,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Palm Leaf Mat Large', 50000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="beaded necklace red">
+            <img src="Beaded Necklace Red.jpg" alt="Beaded Necklace Red" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Beaded Necklace Red</h4>
+            <p>Colorful handmade beads</p>
+            <span class="price">UGX 12,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Beaded Necklace Red', 12000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="beaded necklace blue">
+            <img src="Beaded Necklace blue.jpg" alt="Beaded Necklace Blue" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Beaded Necklace Blue</h4>
+            <p>Colorful handmade beads</p>
+            <span class="price">UGX 12,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Beaded Necklace Blue', 12000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="beaded necklace green">
+            <img src="Beaded Necklace green.jpg" alt="Beaded Necklace Green" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Beaded Necklace Green</h4>
+            <p>Colorful handmade beads</p>
+            <span class="price">UGX 12,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Beaded Necklace Green', 12000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="bracelet set">
+            <img src="Bracelet Set.jpg" alt="Bracelet Set" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Bracelet Set</h4>
+            <p>Set of 3 handmade bracelets</p>
+            <span class="price">UGX 10,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Bracelet Set', 10000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="wall decoration">
+            <img src="Wall Decoration.jpg" alt="Wall Decoration" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Wall Decoration</h4>
+            <p>Traditional wall piece</p>
+            <span class="price">UGX 30,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Wall Decoration', 30000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="table runner">
+            <img src="Table Runner.webp" alt="Table Runner" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Table Runner</h4>
+            <p>Handwoven table cloth</p>
+            <span class="price">UGX 25,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Table Runner', 25000)">📱 Order on WhatsApp</button>
+        </div>
+
+        <!-- Farm Produce Category -->
+        <div class="product-card" data-name="fresh tomatoes">
+            <img src="Fresh Tomatoes.jpg" alt="Fresh Tomatoes" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Fresh Tomatoes</h4>
+            <p>1 kg fresh tomatoes</p>
+            <span class="price">UGX 5,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Fresh Tomatoes', 5000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="fresh onions">
+            <img src="Fresh onions.jpg" alt="Fresh Onions" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Fresh Onions</h4>
+            <p>1 kg fresh onions</p>
+            <span class="price">UGX 5,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Fresh Onions', 5000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="fresh potatoes">
+            <img src="Fresh potatoe.jpg" alt="Fresh Potatoes" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Fresh Potatoes</h4>
+            <p>2 kg Irish potatoes</p>
+            <span class="price">UGX 8,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Fresh Potatoes', 8000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="fresh cabbage">
+            <img src="Fresh gabbage.jpg" alt="Fresh Cabbage" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Fresh Cabbage</h4>
+            <p>1 whole cabbage</p>
+            <span class="price">UGX 4,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Fresh Cabbage', 4000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="fresh eggs">
+            <img src="Fresh Eggs.jpg" alt="Fresh Eggs" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Fresh Eggs</h4>
+            <p>Tray of 30 eggs</p>
+            <span class="price">UGX 12,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Fresh Eggs', 12000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="free range chicken">
+            <img src="Free Range Chicken.jpg" alt="Free Range Chicken" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Free Range Chicken</h4>
+            <p>Whole live chicken</p>
+            <span class="price">UGX 25,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Free Range Chicken', 25000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="pure honey">
+            <img src="Pure Honey.jpg" alt="Pure Honey" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Pure Honey</h4>
+            <p>500ml natural honey</p>
+            <span class="price">UGX 20,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Pure Honey', 20000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="groundnuts">
+            <img src="Groundnuts.jpg" alt="Groundnuts" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Groundnuts</h4>
+            <p>1 kg raw groundnuts</p>
+            <span class="price">UGX 8,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Groundnuts', 8000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="beans">
+            <img src="Beans.jpg" alt="Beans" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Beans</h4>
+            <p>1 kg fresh beans</p>
+            <span class="price">UGX 6,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Beans', 6000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="cassava flour">
+            <img src="Cassava Flour.jpg" alt="Cassava Flour" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Cassava Flour</h4>
+            <p>1 kg cassava flour</p>
+            <span class="price">UGX 7,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Cassava Flour', 7000)">📱 Order on WhatsApp</button>
+        </div>
+        <div class="product-card" data-name="maize flour">
+            <img src="Maize Flour.jpg" alt="Maize Flour" style="width:100%; height:150px; object-fit:cover; border-radius:10px;">
+            <h4>Maize Flour</h4>
+            <p>1 kg maize flour</p>
+            <span class="price">UGX 5,000</span>
+            <button class="add-to-cart" onclick="orderOnWhatsApp('Maize Flour', 5000)">📱 Order on WhatsApp</button>
+        </div>
+    </div>
+
+    <div id="noResults" class="no-results">
+        <p>❌ No products found. Try searching for "basket", "honey", or "eggs"</p>
+    </div>
+</div>
+
+<footer>
+    <p>©️ 2026 Kyankima Women's Cooperative | Mukono, Uganda</p>
+    <p>📞 0777 123 456 | ✉️ info@kyankimawomen.ug</p>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("show");
+    }
+
+    function searchProducts() {
+        let input = document.getElementById("searchInput").value.toLowerCase();
+        let products = document.getElementsByClassName("product-card");
+        let count = 0;
+
+        for (let i = 0; i < products.length; i++) {
+            let name = products[i].getAttribute("data-name");
+            if (name.includes(input) || input === "") {
+                products[i].style.display = "block";
+                count++;
+            } else {
+                products[i].style.display = "none";
+            }
+        }
+
+        let noResults = document.getElementById("noResults");
+        if (count === 0 && input !== "") {
+            noResults.style.display = "block";
+        } else {
+            noResults.style.display = "none";
+        }
+    }
+
+    // WhatsApp order function
+    function orderOnWhatsApp(productName, productPrice) {
+        let phoneNumber = "256777123456";
+        let message = `Hello Kyankima Women's Cooperative,%0A%0AI am interested in ordering:%0A📦 Product: ${productName}%0A💰 Price: UGX ${productPrice}%0A%0APlease let me know how to proceed. Thank you!`;
+        let whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
+        window.open(whatsappUrl, "_blank");
+        
+        // Show confirmation message
+        let cartMessage = document.getElementById("cartMessage");
+        if (cartMessage) {
+            cartMessage.innerHTML = `✅ ${productName} added! Opening WhatsApp...`;
+            cartMessage.style.display = "block";
+            setTimeout(function() {
+                cartMessage.style.display = "none";
+            }, 3000);
+        }
+    }
+</script>
+
+<!-- Cart Message Popup -->
+<div id="cartMessage" class="cart-message" style="position: fixed; bottom: 20px; right: 20px; background: #25D366; color: white; padding: 12px 20px; border-radius: 8px; display: none; z-index: 1000; font-size: 14px;"></div>
+
+</body>
+</html>

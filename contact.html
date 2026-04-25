@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Kyankima Women's Cooperative</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo-area">
+            <div class="logo-text">🌾 Kyankima Women's Cooperative</div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="products.html">📦 Products</a></li>
+                <li><a href="health-tips.html">💚 Health Tips</a></li>
+                <li><a href="faqs.html">❓ FAQs</a></li>
+                <li><a href="about.html">📖 About Us</a></li>
+                <li><a href="contact.html">📞 Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <div class="grid">
+        <div class="card">
+            <h3>📞 Contact Information</h3>
+            <p><strong>Phone:</strong> 0777 123 456</p>
+            <p><strong>Email:</strong> info@kyankimawomen.ug</p>
+            <p><strong>Location:</strong> Kyankima village, Mukono District, Uganda</p>
+            <p><strong>Hours:</strong> Monday - Saturday, 8am - 5pm</p>
+        </div>
+
+        <div class="card">
+            <h3>📝 Send us a Message</h3>
+            <form onsubmit="alert('✅ Message sent! We will reply within 24 hours. Thank you.'); return false;">
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Email or Phone</label>
+                    <input type="text" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Kyankima Women's Cooperative | Mukono, Uganda</p>
+    <p>📞 0777 123 456 | ✉️ info@kyankimawomen.ug</p>
+</footer>
+
+<script>
+    function toggleMenu() {
+        document.getElementById("navMenu").classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>

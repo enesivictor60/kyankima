@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyankima Women's Cooperative | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="logo-area">
+            <div class="logo-text">🌾 Kyankima Women's Cooperative</div>
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+        </div>
+        <nav>
+            <ul id="navMenu">
+                <li><a href="index.html">🏠 Home</a></li>
+                <li><a href="products.html">📦 Products</a></li>
+                <li><a href="health-tips.html">💚 Health Tips</a></li>
+                <li><a href="faqs.html">❓ FAQs</a></li>
+                <li><a href="about.html">📖 About Us</a></li>
+                <li><a href="contact.html">📞 Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Kyankima Women's Cooperative</h1>
+        <p>47 women from Mukono making quality handcrafts, fresh farm produce, and promoting community health since 2019.</p>
+        <a href="products.html" class="btn">Shop Our Products →</a>
+        <a href="contact.html" class="btn" style="background: #555; margin-left: 10px;">Contact Us →</a>
+    </section>
+
+    <!-- Featured Products Section (NEW) -->
+    <div class="page-header">
+        <h2>⭐ Featured Products</h2>
+        <p>Our most popular items this month</p>
+    </div>
+
+    <div class="products-grid">
+        <div class="product-card">
+            <div style="background:#ddd; height:150px; border-radius:10px; display:flex; align-items:center; justify-content:center;">📷</div>
+            <h4>Handwoven Basket</h4>
+            <p>Traditional basket</p>
+            <span class="price">UGX 25,000</span>
+        </div>
+        <div class="product-card">
+            <div style="background:#ddd; height:150px; border-radius:10px; display:flex; align-items:center; justify-content:center;">📷</div>
+            <h4>Pure Honey</h4>
+            <p>500ml natural honey</p>
+            <span class="price">UGX 20,000</span>
+        </div>
+        <div class="product-card">
+            <div style="background:#ddd; height:150px; border-radius:10px; display:flex; align-items:center; justify-content:center;">📷</div>
+            <h4>Fresh Eggs</h4>
+            <p>Tray of 30 eggs</p>
+            <span class="price">UGX 12,000</span>
+        </div>
+    </div>
+
+    <div style="text-align: center; margin-top: 10px;">
+        <a href="products.html" style="color: #2e7d32;">View all 23 products →</a>
+    </div>
+
+    <!-- Mission Section -->
+    <div class="grid">
+        <div class="card">
+            <h3>🌾 Our Mission</h3>
+            <p>Empowering 47 women in Mukono through sustainable agriculture, handcraft production, and community health awareness.</p>
+        </div>
+        <div class="card">
+            <h3>📦 What We Sell</h3>
+            <p>Handwoven baskets, mats, fresh vegetables, eggs, honey, groundnuts, and traditional crafts. All made by our members.</p>
+        </div>
+        <div class="card">
+            <h3>💚 Health Awareness</h3>
+            <p>Monthly health tips from our 3 partner health workers covering nutrition, hygiene, and family wellness.</p>
+        </div>
+    </div>
+
+    <!-- Testimonial Section (NEW) -->
+    <div class="card" style="text-align: center; background: #e8f5e9;">
+        <h3>⭐ What Our Customers Say</h3>
+        <p>"I bought a basket and honey from Kyankima. The quality is amazing and delivery was fast. I will buy again!"</p>
+        <p><strong>- Sarah, Kampala</strong></p>
+    </div>
+
+    <!-- Newsletter Signup (NEW) -->
+    <div class="card" style="text-align: center;">
+        <h3>📧 Get Health Tips & Offers</h3>
+        <p>Subscribe to receive monthly health tips and product updates</p>
+        <form onsubmit="alert('✅ Subscribed! Check your email for confirmation.'); return false;" style="display: flex; gap: 10px; margin-top: 15px; flex-wrap: wrap;">
+            <input type="email" placeholder="Your email address" required style="flex: 1;">
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Kyankima Women's Cooperative | Mukono, Uganda</p>
+    <p>📞 0777 123 456 | ✉️ info@kyankimawomen.ug</p>
+</footer>
+
+<script>
+    function toggleMenu() {
+        var menu = document.getElementById("navMenu");
+        menu.classList.toggle("show");
+    }
+</script>
+
+</body>
+</html>
